@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./imgs/iconeList.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Todo List</title>
-  <meta name="google-site-verification" content="e_mMvF-gsL3ekXtMUiO27HdwtSUnbmR7s2-iHL5udV4" />
+  <meta name="google-site-verification" content="e_mMvF-gsL3ekXtMUiO27HdwtSUnbmR7s2-iHL5udV4"/>
 </head>
 
 <body>
@@ -21,10 +20,10 @@
 
   <main>
     <section class="container-adicionar-tarefa">
-      <h2>Digite o nome da sua tarefa para adiciona-la ao board</h2>
+      <h2>Digite o nome da sua tarefa para adicioná-la ao board</h2>
       <div class="container-input-tarefa">
-        <input placeholder="Digite aqui..." type="text" name="mensagem" id="mensagem">
-        <button>
+        <input placeholder="Digite aqui..." type="text" name="mensagem" id="mensagem" maxlength="45" required>
+        <button id="botao-adicionar-tarefa">
           <img src="./imgs/adiocnar.svg" alt="Icone de mais">
         </button>
       </div>
@@ -35,52 +34,22 @@
         <div class="tag-a-fazer">
           <p>A fazer</p>
         </div>
-
-        <div class="container-tarefas">
-          <div class="tarefa-a-fazer">
-            <div class="task-nome">
-              <img src="./imgs/esperar.svg" alt="Icone de um circulo com 3 pontos">
-              <p>Fazer exercicíos de lógica com JavaScript</p>
-            </div>
-
-            <div class="task-acoes">
-              <button>
-                <img src="./imgs/relogio1.svg" alt="Icone de um relogio com seta pra cima">
-              </button>
-
-              <button>
-                <img src="./imgs/lixeira.svg" alt="Icone de uma lixeira">
-              </button>
-            </div>
-          </div>
-        </div>
-
+        
+        <section class="container-adicionar-tarefa container-tarefas-a-fazer">
+           
+        </section>
       </div>
 
+      
       <div class="secao-a-fazer">
         <div class="tag-em-andamento">
           <p>Em andamento</p>
         </div>
 
-        <div class="container-tarefas">
-          <div class="tarefa-a-fazer">
-            <div class="task-nome">
-              <img src="./imgs/relogio.svg" alt="Icone de um circulo com 3 pontos">
-              <p>Fazer exercicíos de lógica com JavaScript</p>
-            </div>
-
-            <div class="task-acoes task-acoes-andamento">
-              <button>
-                <img src="./imgs/check1.svg" alt="Icone de um relogio com seta pra cima">
-              </button>
-
-              <button>
-                <img src="./imgs/lixeira.svg" alt="Icone de uma lixeira">
-              </button>
-            </div>
-          </div>
+        <div class="container-tarefas container-tarefas-andamento">
+          
         </div>
-
+        
       </div>
 
 
@@ -89,20 +58,8 @@
           <p>Finalizado</p>
         </div>
 
-        <div class="container-tarefas">
-          <div class="tarefa-a-fazer">
-            <div class="task-nome">
-              <img src="./imgs/check.svg" alt="Icone de um circulo com 3 pontos">
-              <p>Fazer exercicíos de lógica com JavaScript</p>
-            </div>
-
-            <div class="task-acoes task-acoes-finalizado">
-
-              <button>
-                <img src="./imgs/lixeira.svg" alt="Icone de uma lixeira">
-              </button>
-            </div>
-          </div>
+        <div class="container-tarefas container-tarefas-realizadas">
+          
         </div>
 
       </div>
@@ -110,5 +67,4 @@
   </main>
   <script src="./js/script.js"></script>
 </body>
-
 </html>
